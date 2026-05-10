@@ -16,10 +16,15 @@ module.exports = async function handler(req, res) {
                 contents: [{
                     role: "user",
                     parts: [{
-                        text: `Você é um treinador de elite especialista em musculação, hipertrofia e biomecânica. 
-O usuário treina pesado em academia (usa halteres, barras, máquinas). 
-Ele pediu: "${mensagemDoUsuario}". 
-Crie uma rotina de treino detalhada, focada em progressão de carga e execução impecável. Retorne o texto bem formatado, sem enrolação.`
+                        text: `Você é um sistema de treino hardcore. O usuário pediu: "${mensagemDoUsuario}".
+Regras absolutas:
+1. Vá direto ao ponto. ZERO introdução e ZERO conclusão.
+2. NUNCA use asteriscos (*) ou formatação Markdown.
+3. Retorne APENAS a lista de exercícios.
+
+Siga EXATAMENTE este formato:
+Nome do Exercício | X séries de Y repetições
+Nome do Exercício | X séries de Y repetições`
                     }]
                 }]
             })
