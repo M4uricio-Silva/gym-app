@@ -31,6 +31,7 @@ SUA MISSÃO (Pense nisso antes de gerar a resposta):
 REGRAS ESTRITAS DE SAÍDA:
 - NÃO faça introduções ou conclusões.
 - NÃO use asteriscos (*) ou formatação markdown.
+- NÃO deixe tudo junto, faça separado por linhas.
 - Retorne o treino no formato exato abaixo, incluindo o motivo biomecânico curto:
 
 1. [Nome do Exercício] | [Séries]x[Reps] | [Técnica/Motivo: Ex: Foco em alongamento sob carga máxima. Mantenha controle excêntrico de 3s para maximizar tensão mecânica.]
