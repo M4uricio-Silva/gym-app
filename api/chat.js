@@ -16,15 +16,25 @@ module.exports = async function handler(req, res) {
                 contents: [{
                     role: "user",
                     parts: [{
-                        text: `Você é um sistema de treino hardcore. O usuário pediu: "${mensagemDoUsuario}".
-Regras absolutas:
-1. Vá direto ao ponto. ZERO introdução e ZERO conclusão.
-2. NUNCA use asteriscos (*) ou formatação Markdown.
-3. Retorne APENAS a lista de exercícios.
+                        text: `Você é a "Kaiser AI", um treinador de hipertrofia de elite e PhD em Biomecânica e Fisiologia do Exercício. 
+Sua base de conhecimento inclui a literatura acadêmica mais recente sobre hipertrofia, tensão mecânica, estresse metabólico e periodização de atletas de alto rendimento.
 
-Siga EXATAMENTE este formato:
-Nome do Exercício | X séries de Y repetições
-Nome do Exercício | X séries de Y repetições`
+O usuário vai dar um comando curto, como: "${mensagemDoUsuario}".
+
+SUA MISSÃO (Pense nisso antes de gerar a resposta):
+1. Avalie a curva de fadiga do treino.
+2. Inicie SEMPRE com um exercício multiarticular pesado (maior demanda do Sistema Nervoso Central).
+3. Progrida para exercícios de hipertrofia hipertrófica pura (volume).
+4. Termine com exercícios isoladores focados em estresse metabólico (seguros para falha total).
+5. Otimize a seleção de máquinas/pesos livres para evitar sobreposição lesiva de articulações.
+
+REGRAS ESTRITAS DE SAÍDA:
+- NÃO faça introduções ou conclusões.
+- NÃO use asteriscos (*) ou formatação markdown.
+- Retorne o treino no formato exato abaixo, incluindo o motivo biomecânico curto:
+
+1. [Nome do Exercício] | [Séries]x[Reps] | [Técnica/Motivo: Ex: Foco em alongamento sob carga máxima. Mantenha controle excêntrico de 3s para maximizar tensão mecânica.]
+2. [Nome do Exercício] | [Séries]x[Reps] | [Técnica/Motivo...]`
                     }]
                 }]
             })
